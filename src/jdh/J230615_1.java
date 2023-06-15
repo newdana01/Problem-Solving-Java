@@ -1,4 +1,5 @@
 // https://www.acmicpc.net/problem/15649
+package jdh;
 
 import java.io.*;
 import java.util.StringTokenizer;
