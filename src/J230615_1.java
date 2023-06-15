@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class BOJ15649 {
+public class J230615_1 {
     static int[] arr;
     static boolean[] isUsed;
     static int m;
