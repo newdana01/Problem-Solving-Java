@@ -17,12 +17,9 @@ public class J230630_1 {
             coordinate[i][1] = Integer.parseInt(st.nextToken());
         }
 
-        Arrays.sort(coordinate, new Comparator<int[]>(){
-            @Override
-            public int compare(int[] a, int[] b){
-                if (a[0] != b[0]) return a[0] - b[0];
-                else return a[1] - b[1];
-            }
+        Arrays.sort(coordinate, (a, b) -> {
+            if (a[0] != b[0]) return a[0] - b[0];
+            else return a[1] - b[1];
         });
 
         StringBuilder sb = new StringBuilder();
