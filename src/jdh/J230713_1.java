@@ -1,6 +1,6 @@
 // 행렬 곱 만들기
 
-pakage jdh;
+package jdh;
 
 import java.util.*;
 
@@ -18,4 +18,4 @@ public class J230713_1{
       }
     }
     System.out.println(Arrays.deepToString(answer));
-}
+}}
