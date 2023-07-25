@@ -9,10 +9,12 @@ public class J230725_2 {
     static int n;
     static int[] nums;
     static int x;
+    static Set<Integer> set = new HashSet<>();
 
     public static void main(String args[]) throws Exception{
         input();
-        twoPointer();
+//        twoPointer();
+        useSet();
     }
 
     static void twoPointer(){
@@ -31,6 +33,22 @@ public class J230725_2 {
             }
         }
         System.out.println(count);
+    }
+
+    static void useSet(){ // set을 이용한 방법
+        int count = 0;
+        for (int n : nums) {
+            set.add(n);
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (set.contains(x - nums[i])) {
+                count++;
+            }
+        }
+
+        System.out.println(count/2);
+
     }
 
     static void input() throws IOException {
