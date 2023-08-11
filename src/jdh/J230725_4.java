@@ -68,12 +68,12 @@ public class J230725_4 {
             }
         });
 
-        int result = Result.diagonalDifference(arr);
+//        int result = Result.diagonalDifference(arr);
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+//        bufferedWriter.write(String.valueOf(result));
+//        bufferedWriter.newLine();
+//
+//        bufferedReader.close();
+//        bufferedWriter.close();
     }
 }
