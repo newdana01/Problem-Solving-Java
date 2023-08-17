@@ -33,6 +33,26 @@ public class J230811_2 {
         }
 
         System.out.println(count);
+        System.out.println("***");
+        System.out.println(twoPointer(n));
+    }
 
+    static int twoPointer(int n) {
+        int start = 1, end = 1;
+        int sum = 1;
+        int count = 0;
+
+        while (start <= n) {
+            if (sum == n) count++;
+            if (sum < n) {
+                end++;
+                sum += end;
+            } else {
+                sum -= start;
+                start ++;
+            }
+        }
+
+        return count;
     }
 }
