@@ -22,11 +22,7 @@ public class J230811_1 {
             st = new StringTokenizer(br.readLine());
             for (int j = 1; j <= N; j++){
                 table[i][j] = Integer.parseInt(st.nextToken());
-            }
-        }
 
-        for (int i = 1; i <= N; i++) {
-            for (int j = 1; j <= N; j++){
                 if (i == 1 && j == 1) {
                     sumArr[i][j] = table[i][j];
                 } else if (i == 1) {
