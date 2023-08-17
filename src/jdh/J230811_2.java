@@ -4,7 +4,6 @@ package jdh;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class J230811_2 {
     public static void main(String[] args) throws IOException {
@@ -22,7 +21,6 @@ public class J230811_2 {
                 count++;
             }
         }
-        System.out.println(Arrays.toString(sumArr));
         for (int i = idx; i <= n; i++) {
             int j = i-1;
             while (j > 0 && sumArr[i] - sumArr[j] <= n){
